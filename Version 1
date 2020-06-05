@@ -10,7 +10,6 @@
 #include <cstring>
 #include <cstdlib>
 #include <ctime>
-#include <fstream>
 #include <vector>
 
 using namespace std;
@@ -126,7 +125,6 @@ int main(int argc, char** argv) {
             if(hov == "V"){
                 v_u_cr(board, ROWS, pos1, pos2);
             }
-
             //REPRINT THE TABLE
             prntTbl(board, ROWS);
                 cout<<"Enter H to place your ship in a horizontal position"<<endl;
@@ -154,8 +152,7 @@ int main(int argc, char** argv) {
             //REPRINT THE TABLE
             prntTbl(board, ROWS);
             
-            //Beginning of Computer Phase
-            
+            //Beginning of Computer Phase 
             for(int row = 0; row < ROWS; row++){
                 for(int col = 0; col < COLS; col++){
                     boardAI[col][row] = ".";
