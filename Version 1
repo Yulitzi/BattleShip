@@ -41,7 +41,6 @@ void h_u_cr(string [][COLS], int, int, int);    //HORZ, USER, CRUISER
 void v_a_cr(string [][COLS], int, int, int);    //VERT, AI, CRUISER
 void h_a_cr(string [][COLS], int, int, int);    //HORZ, AI, CRUISER
 
-
 //Program Execution Begins Here
 int main(int argc, char** argv) {
     srand(static_cast<unsigned int>(time(0)));  //Random # for CPU
@@ -145,7 +144,6 @@ int main(int argc, char** argv) {
             prntTbl(board, ROWS);
             
             //Beginning of Computer Phase
-            
             for(int row = 0; row < ROWS; row++){
                 for(int col = 0; col < COLS; col++){
                     boardAI[col][row] = ".";
