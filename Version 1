@@ -47,7 +47,6 @@ void compAtk(string [][COLS], string [][COLS], int, int, int);  //CPU Attack pha
 void batRep(string [][COLS], string [][COLS], string [][COLS], string [][COLS], int, bool&, vector<int>, vector<int>);  //Repeats attack phase
 void shipChk(string [][COLS], string [][COLS], int);    //Checks if ship exists
 
-
 //Program Execution Begins Here
 int main(int argc, char** argv) {
     srand(static_cast<unsigned int>(time(0)));  //Random # for CPU
